@@ -2,7 +2,22 @@
 
 <html>
 	<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,
+      default-src     'self';
+      script-src      'self';
+      style-src       'self';
+      img-src         'self';
+      font-src        'self';
+      connect-src     'self';
+      media-src       'self';
+      object-src      'self';
+      child-src       'self';
+      frame-ancestors 'self';
+      frame-src       'self';
+      worker-src      'self';
+      form-action     'self';
+      block-all-mixed-content;
+      ">
 	</head>
 
 <body>
