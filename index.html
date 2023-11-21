@@ -9,12 +9,12 @@
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-            //embeddedservice_bootstrap.utilAPI.showChatButton();
-			console.log("My origin:", window.location.origin);
+
+			console.log('Reached here');
 			embeddedservice_bootstrap.init(
 				'00DDI0000008giE',
-				'miawchatbot',
-				'https://careextern--cepartial.sandbox.my.site.com/ESWmiawchatbot1700536833026',
+				'ChatBotMIAW',
+				'https://careextern--cepartial.sandbox.my.site.com/ESWChatBotMIAW1700535629585',
 				{
 					scrt2URL: 'https://careextern--cepartial.sandbox.my.salesforce-scrt.com'
 				}
@@ -24,10 +24,7 @@
 		}
 	};
 </script>
-
-<script type='text/javascript' src='https://careextern--cepartial.sandbox.my.site.com/ESWChatBotMIAW1700535629585/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'>
-
-</script>
+<script type='text/javascript' src='https://careextern--cepartial.sandbox.my.site.com/ESWChatBotMIAW1700535629585/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
         
     </body>
