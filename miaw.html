@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    </head>
+
+<body>
+  
+        <!-- Load external JavaScript -->
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #0064e0;
+		font-family: "Optimistic Text", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #0064e0;
+	}
+</style>
+
+<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+            //embeddedservice_bootstrap.utilAPI.showChatButton();
+			console.log("My origin:", window.location.origin);
+			embeddedservice_bootstrap.init(
+				'00DDI0000008giE',
+				'miawchatbot',
+				'https://careextern--cepartial.sandbox.my.site.com/ESWmiawchatbot1700536833026',
+				{
+					scrt2URL: 'https://careextern--cepartial.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://careextern--cepartial.sandbox.my.site.com/ESWmiawchatbot1700536833026/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+</script>
+        
+    </body>
+
+</html>
