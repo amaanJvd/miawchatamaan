@@ -2,8 +2,8 @@
 
 <html>
 	<head>
-	Content-Security-Policy-Report-Only: script-src 'self';
-                                     report-to csp-reporting-endpoint
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://meta.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;**script-src 'self' http://www.meta.com 'unsafe-inline' 'unsafe-eval';** ">
+
 
                                      
 	</head>
