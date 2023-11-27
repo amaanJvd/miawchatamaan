@@ -22,6 +22,14 @@
 					scrt2URL: 'https://careextern--cepartial.sandbox.my.salesforce-scrt.com'
 				}
 			);
+
+			window.addEventListener("onEmbeddedMessagingReady", () => {
+  console.log("Received the onEmbeddedMessagingReady event…");
+
+  embeddedservice_bootstrap.autoResponseAPI.setAutoResponseParameters({
+    cartValue: "123",
+  });
+});
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
