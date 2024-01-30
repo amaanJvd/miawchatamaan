@@ -13,31 +13,20 @@
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-			console.log('Reached here');
 			embeddedservice_bootstrap.init(
-				'00DDI0000008giE',
-				'ChatBotMIAW',
-				'https://careextern--cepartial.sandbox.my.site.com/ESWChatBotMIAW1700535629585',
+				'00DDM000003ttDF',
+				'ATPT_MIAW_Deploy',
+				'https://facebook-peeps--fbpeepstg.sandbox.my.site.com/ESWATPTMIAWDeploy1706125903363',
 				{
-					scrt2URL: 'https://careextern--cepartial.sandbox.my.salesforce-scrt.com'
+					scrt2URL: 'https://facebook-peeps--fbpeepstg.sandbox.my.salesforce-scrt.com'
 				}
 			);
-
-			window.addEventListener("onEmbeddedMessagingReady", () => {
-  console.log("Received message");
-
-  embeddedservice_bootstrap.autoResponseAPI.setAutoResponseParameters({
-     cartValue: "123",
-  cartDescription: "My cart description",
-  });
-});
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
 </script>
-<script type='text/javascript' src='https://careextern--cepartial.sandbox.my.site.com/ESWChatBotMIAW1700535629585/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-
+<script type='text/javascript' src='https://facebook-peeps--fbpeepstg.sandbox.my.site.com/ESWATPTMIAWDeploy1706125903363/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
         
     </body>
 
